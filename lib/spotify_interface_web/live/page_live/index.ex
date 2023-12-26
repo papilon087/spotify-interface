@@ -1,10 +1,4 @@
 defmodule SpotifyInterfaceWeb.PageLive.Index do
-  alias Phoenix.LiveView
-  use LiveView
-
-  def render(assigns) do
-    ~H"""
-    Hi
-    """
-  end
+  use SpotifyInterfaceWeb, :live_view
+  alias SpotifyInterfaceWeb.PageLive.Aside
 end

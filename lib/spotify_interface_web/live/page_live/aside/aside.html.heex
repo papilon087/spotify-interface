@@ -1,0 +1,17 @@
+<aside class="w-80 border-r border-zinc 800 p-6" id={@id}>
+  <nav class="space-y-5 mt-10">
+    <a
+      :for={menu <- @nav_menu_options}
+      href=""
+      class="flex items-center text-sm font-semibold text-zinc-200 gap-2"
+    >
+      <.icon name={menu.icon} class="h-5 w-5" /> <%= menu.text %>
+    </a>
+  </nav>
+
+  <nav class="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
+    <a :for={i <- 1..6} href="" class="text-sm text-zinc-400 hover:text-zinc-100">
+      Best Songs 202<%= i %>
+    </a>
+  </nav>
+</aside>
